@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">SingKorea</string>
+    <string name="action_settings">Settings</string>
+    <string name="notification_error_ssl_cert_invalid">연결이 비공개로 설정되어 있지 않습니다.\n(NET::ERR_CERT_COMMON_NAME_INVALID)\nwww.singkorea.com을 신뢰하시면 진행 하시기 바랍니다.</string>
+    <string name="quit">종료</string>
+    <string name="really_quit">Do you want to exit SingKorea?</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">준비중입니다(Ready)</string>
+
+    <string name="appbar_spring_behavior">android.support.design.widget.AppBarLayoutSpringBehavior</string>
+    <string name="appbar_fling_fix_behavior">android.support.design.widget.AppBarFlingFixBehavior</string>
+
+    <string name="rationale_title">Permission required</string>
+    <string name="rationale_message">we need permission for read <b>image</b></string>
+
+
+    <string name="facebook_app_id">1246750395470596</string>
+</resources>

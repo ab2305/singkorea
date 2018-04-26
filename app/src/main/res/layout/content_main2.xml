@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="singkorea.singkorea.com.singkorea.Main2Activity"
+    android:background="#dfdfdf"
+    tools:showIn="@layout/activity_main2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/banner01"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_launcher_background"
+                app:layout_constraintEnd_toStartOf="@+id/banner02"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/banner02"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_launcher_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/banner01" />
+        </android.support.constraint.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/banner03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/banner01" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/category01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/korean_food_en"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:onClick="onClickEvent"
+                app:layout_constraintEnd_toStartOf="@+id/category02"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/category02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/food_en"
+                app:layout_constraintEnd_toStartOf="@+id/category03"
+                app:layout_constraintStart_toEndOf="@id/category01"
+                app:layout_constraintTop_toTopOf="@id/category01" />
+
+            <ImageView
+                android:id="@+id/category03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/k_beauty_en"
+                app:layout_constraintEnd_toStartOf="@+id/category04"
+                app:layout_constraintStart_toEndOf="@+id/category02"
+                app:layout_constraintTop_toTopOf="@id/category01" />
+
+            <ImageView
+                android:id="@+id/category04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/event_en"
+                app:layout_constraintEnd_toStartOf="@+id/category05"
+                app:layout_constraintStart_toEndOf="@id/category03"
+                app:layout_constraintTop_toTopOf="@id/category01" />
+
+            <ImageView
+                android:id="@+id/category05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/property_en"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/category04"
+                app:layout_constraintTop_toTopOf="@id/category01" />
+
+            <ImageView
+                android:id="@+id/category06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/korean_food_en"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toStartOf="@+id/category07"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/category01" />
+
+            <ImageView
+                android:id="@+id/category07"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/food_en"
+                app:layout_constraintEnd_toStartOf="@+id/category08"
+                app:layout_constraintStart_toEndOf="@id/category06"
+                app:layout_constraintTop_toTopOf="@id/category06" />
+
+            <ImageView
+                android:id="@+id/category08"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/k_beauty_en"
+                app:layout_constraintEnd_toStartOf="@+id/category09"
+                app:layout_constraintStart_toEndOf="@+id/category07"
+                app:layout_constraintTop_toTopOf="@id/category06" />
+
+            <ImageView
+                android:id="@+id/category09"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/event_en"
+                app:layout_constraintEnd_toStartOf="@+id/category10"
+                app:layout_constraintStart_toEndOf="@id/category08"
+                app:layout_constraintTop_toTopOf="@id/category06" />
+
+            <ImageView
+                android:id="@+id/category10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/property_en"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/category09"
+                app:layout_constraintTop_toTopOf="@id/category06" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+        <!--<android.support.v4.view.ViewPager-->
+            <!--android:id="@+id/viewPager"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:background="#ff00ff"-->
+            <!--android:layout_height="wrap_content" />-->
+
+        <singkorea.singkorea.com.singkorea.adapter.EnhancedWrapContentViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/indicator"
+            app:ci_drawable="@drawable/blue_radius"
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            android:layout_height="48dp" />
+
+    </LinearLayout>
+
+
+</ScrollView>

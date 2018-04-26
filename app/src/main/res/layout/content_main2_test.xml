@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="singkorea.singkorea.com.singkorea.Main2Activity"
+    android:background="#F3F3F3"
+    tools:showIn="@layout/activity_main2">
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+    <!--</LinearLayout>-->
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/banner01"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="100dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintHeight_min="50dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toStartOf="@+id/banner02"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/banner02"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="100dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="10dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_min="50dp"
+            app:layout_constraintStart_toEndOf="@id/banner01" />
+
+        <ImageView
+            android:id="@+id/banner03"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:paddingBottom="10dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            app:layout_constraintHeight_min="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/banner01" />
+
+        <ImageView
+            android:id="@+id/category01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/korean_food_ko"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toStartOf="@+id/category02"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            android:onClick="onClickEvent"
+            app:layout_constraintTop_toBottomOf="@id/banner03" />
+
+        <ImageView
+            android:id="@+id/category02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/food_ko"
+            android:onClick="onClickEvent"
+            app:layout_constraintEnd_toStartOf="@+id/category03"
+            app:layout_constraintStart_toEndOf="@id/category01"
+            app:layout_constraintTop_toTopOf="@id/category01" />
+
+        <ImageView
+            android:id="@+id/category03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/k_beauty_ko"
+            android:onClick="onClickEvent"
+            app:layout_constraintEnd_toStartOf="@+id/category04"
+            app:layout_constraintStart_toEndOf="@+id/category02"
+            app:layout_constraintTop_toTopOf="@id/category01" />
+
+        <ImageView
+            android:id="@+id/category04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/event_ko"
+            android:onClick="onClickEvent"
+            app:layout_constraintEnd_toStartOf="@+id/category05"
+            app:layout_constraintStart_toEndOf="@id/category03"
+            app:layout_constraintTop_toTopOf="@id/category01" />
+
+        <ImageView
+            android:id="@+id/category05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/property_ko"
+            android:onClick="onClickEvent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/category04"
+            app:layout_constraintTop_toTopOf="@id/category01" />
+
+        <ImageView
+            android:id="@+id/category06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/market_ko"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:onClick="onClickEvent"
+            app:layout_constraintEnd_toStartOf="@+id/category07"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/category01" />
+
+        <ImageView
+            android:id="@+id/category07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/community_ko"
+            android:onClick="onClickEvent"
+            app:layout_constraintEnd_toStartOf="@+id/category08"
+            app:layout_constraintStart_toEndOf="@id/category06"
+            app:layout_constraintTop_toTopOf="@id/category06" />
+
+        <ImageView
+            android:id="@+id/category08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/hospital_ko"
+            android:onClick="onClickEvent"
+            app:layout_constraintEnd_toStartOf="@+id/category09"
+            app:layout_constraintStart_toEndOf="@+id/category07"
+            app:layout_constraintTop_toTopOf="@id/category06" />
+
+        <ImageView
+            android:id="@+id/category09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/carrental_ko"
+            android:onClick="onClickEvent"
+            app:layout_constraintEnd_toStartOf="@+id/category10"
+            app:layout_constraintStart_toEndOf="@id/category08"
+            app:layout_constraintTop_toTopOf="@id/category06" />
+
+        <ImageView
+            android:id="@+id/category10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/etc_ko"
+            android:onClick="onClickEvent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/category09"
+            app:layout_constraintTop_toTopOf="@id/category06" />
+
+        <!--<android.support.v4.view.ViewPager-->
+            <!--android:id="@+id/viewPager"-->
+            <!--app:layout_constraintTop_toBottomOf="@id/category06"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:background="#ff0000"-->
+            <!--android:layout_height="600dp" />-->
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/headerNews"
+            android:layout_width="0dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/category06"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@android:color/white"
+            android:padding="15dp"
+            android:onClick="onClickEvent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/titleNews"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:src="@drawable/singnews_title"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/arrowNews"
+                app:layout_constraintTop_toTopOf="@id/headerNews"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:src="@drawable/arrow"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/moneyBackground"
+                app:layout_constraintTop_toTopOf="@id/titleNews"
+                app:layout_constraintBottom_toBottomOf="@id/titleNews"
+                android:layout_width="wrap_content"
+                app:layout_constraintEnd_toStartOf="@id/arrowNews"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/moneybg_board"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/moneyBackground"
+                app:layout_constraintBottom_toBottomOf="@id/moneyBackground"
+                app:layout_constraintEnd_toEndOf="@id/moneyBackground"
+                android:textColor="@android:color/holo_red_dark"
+                android:paddingRight="4dp" />
+
+            <LinearLayout
+                android:id="@+id/layTopNews"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                app:layout_constraintTop_toBottomOf="@id/titleNews"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_height="wrap_content">
+            </LinearLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+
+        <!--<android.support.constraint.ConstraintLayout-->
+            <!--android:id="@+id/headerBest"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--app:layout_constraintTop_toBottomOf="@id/headerNews"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--android:background="@android:color/white"-->
+            <!--android:padding="10dp"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/titleBest"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:src="@drawable/promotion_title"-->
+                <!--android:layout_height="wrap_content" />-->
+
+            <!--<ImageView-->
+                <!--app:layout_constraintTop_toTopOf="@id/titleBest"-->
+                <!--app:layout_constraintEnd_toEndOf="parent"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:src="@drawable/arrow"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:layout_height="wrap_content" />-->
+
+        <!--</android.support.constraint.ConstraintLayout>-->
+
+        <!--<singkorea.singkorea.com.singkorea.adapter.EnhancedWrapContentViewPager-->
+            <!--android:id="@+id/viewPagerBest"-->
+            <!--app:layout_constraintTop_toBottomOf="@id/headerBest"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--android:background="#ff0000"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+             <!--/>-->
+
+
+        <!--<me.relex.circleindicator.CircleIndicator-->
+            <!--android:id="@+id/indicatorBest"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintTop_toBottomOf="@id/viewPagerBest"-->
+            <!--android:background="@android:color/white"-->
+            <!--app:ci_drawable="@drawable/blue_radius"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="36dp" />-->
+
+        <LinearLayout
+            android:id="@+id/layBest"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/headerNews"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_height="wrap_content">
+        </LinearLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/headerPromotion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/white"
+            android:padding="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layBest">
+
+        <ImageView
+                android:id="@+id/titlePromotion"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:src="@drawable/promotion_title"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/promotiondetail"
+                app:layout_constraintTop_toTopOf="@id/titlePromotion"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:src="@drawable/arrow"
+                android:onClick="onClickEvent"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <singkorea.singkorea.com.singkorea.adapter.EnhancedWrapContentViewPager
+            android:id="@+id/viewPagerPromotion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/headerPromotion" />
+
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/indicatorPromotion"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewPagerPromotion"
+            android:background="@android:color/white"
+            app:ci_drawable="@drawable/blue_radius"
+            android:layout_width="0dp"
+            android:layout_height="36dp" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/headerClip"
+            android:layout_width="0dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/indicatorPromotion"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/titleClip"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:src="@drawable/shopnewclip_title"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/clipdetail"
+                app:layout_constraintTop_toTopOf="@id/titleClip"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:src="@drawable/arrow"
+                android:layout_marginRight="10dp"
+                android:onClick="onClickEvent"
+                android:layout_height="wrap_content" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <singkorea.singkorea.com.singkorea.adapter.EnhancedWrapContentViewPager
+            android:id="@+id/viewPagerClip"
+            app:layout_constraintTop_toBottomOf="@id/headerClip"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="#ff0000"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            />
+
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/indicatorClip"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewPagerClip"
+            android:background="@android:color/white"
+            app:ci_drawable="@drawable/blue_radius"
+            android:layout_width="0dp"
+            android:layout_height="36dp" />
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/headerLife"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/white"
+            android:padding="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/indicatorClip">
+
+            <ImageView
+                android:id="@+id/titleLifeCycle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/lifestyle_title"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/lifeCycledetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/arrow"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:onClick="onClickEvent"
+                app:layout_constraintTop_toTopOf="@id/titleLifeCycle" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <singkorea.singkorea.com.singkorea.adapter.EnhancedWrapContentViewPager
+            android:id="@+id/viewPagerLifeCycle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/headerLife" />
+
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/indicatorLifeCycle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewPagerLifeCycle"
+            android:background="@android:color/white"
+            app:ci_drawable="@drawable/blue_radius"
+            android:layout_width="0dp"
+            android:layout_height="36dp" />
+
+        <ImageView
+            android:id="@+id/banner04"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="100dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/indicatorLifeCycle" />
+
+        <ImageView
+            android:id="@+id/banner05"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:paddingBottom="10dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/banner04" />
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/headerEvent"
+            android:layout_width="0dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/banner05"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/titleEvent"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:src="@drawable/event_title"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/eventdetail"
+                app:layout_constraintTop_toTopOf="@id/titleEvent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
+                android:src="@drawable/arrow"
+                android:onClick="onClickEvent"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <singkorea.singkorea.com.singkorea.adapter.EnhancedWrapContentViewPager
+            android:id="@+id/viewPagerEvent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/headerEvent" />
+
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/indicatorEvent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewPagerEvent"
+            android:background="@android:color/white"
+            app:ci_drawable="@drawable/blue_radius"
+            android:layout_width="0dp"
+            android:layout_height="36dp" />
+
+        <ImageView
+            android:id="@+id/banner06"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="100dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/indicatorEvent" />
+
+        <ImageView
+            android:id="@+id/banner07"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:paddingBottom="10dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/banner06" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</ScrollView>

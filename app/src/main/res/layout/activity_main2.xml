@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="singkorea.singkorea.com.singkorea.Main2Activity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#34498d"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+
+            <ImageView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/logo_top" />
+
+            <ImageView
+                android:id="@+id/toolbar_lang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/en_flag"
+                android:tag="kr" />
+
+            <TextView
+                android:id="@+id/toolbar_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:layout_marginLeft="10dp"
+                android:onClick="onClickEvent"
+                android:src="@drawable/en_flag"
+                android:text="LogIn"
+                android:textColor="@android:color/white" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:background="#34498d"
+            android:padding="10dp"
+            android:visibility="visible"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:layout_height="?attr/actionBarSize" >
+
+            <EditText
+                android:id="@+id/edit_find"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/find_bg"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textColor="@android:color/black"
+                android:paddingLeft="10dp"
+                android:paddingRight="50dp"
+                app:layout_constraintEnd_toStartOf="@+id/find_btn"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageButton
+                android:id="@+id/find_btn"
+                android:layout_width="39dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/find_btn"
+                android:onClick="onClickEvent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main2_test" />
+
+
+</android.support.design.widget.CoordinatorLayout>

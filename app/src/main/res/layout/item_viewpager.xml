@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="singkorea.singkorea.com.singkorea.Main2Activity"
+    tools:showIn="@layout/activity_main2">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="15dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="10dp" />
+
+    <ImageView
+        android:id="@+id/iv01"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:scaleType="fitXY"
+        android:paddingRight="5dp"
+        app:layout_constraintEnd_toStartOf="@id/iv02"
+        app:layout_constraintStart_toStartOf="@id/guide_start"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/playerimg01"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:scaleType="fitXY"
+        android:clickable="false"
+        android:src="@drawable/btnplayer"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@id/iv02"
+        app:layout_constraintStart_toStartOf="@id/guide_start"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv01"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:lines="2"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        app:layout_constraintEnd_toEndOf="@id/iv01"
+        app:layout_constraintStart_toStartOf="@id/iv01"
+        app:layout_constraintTop_toBottomOf="@id/iv01" />
+
+    <ImageView
+        android:id="@+id/iv02"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:minHeight="130dp"
+        android:paddingLeft="5dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@id/guide_end"
+        app:layout_constraintStart_toEndOf="@id/iv01"
+        app:layout_constraintTop_toTopOf="@id/iv01" />
+
+    <ImageView
+        android:id="@+id/playerimg02"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:minHeight="130dp"
+        android:paddingLeft="5dp"
+        android:scaleType="fitXY"
+        android:clickable="false"
+        android:src="@drawable/btnplayer"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/guide_end"
+        app:layout_constraintStart_toEndOf="@id/iv01"
+        app:layout_constraintTop_toTopOf="@id/iv01" />
+
+    <TextView
+        android:id="@+id/tv02"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:lines="2"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        app:layout_constraintEnd_toEndOf="@id/iv02"
+        app:layout_constraintStart_toStartOf="@id/iv02"
+        app:layout_constraintTop_toBottomOf="@id/iv02" />
+
+    <ImageView
+        android:id="@+id/iv03"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:minHeight="130dp"
+        android:paddingRight="5dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toStartOf="@id/iv04"
+        app:layout_constraintStart_toStartOf="@id/guide_start"
+        app:layout_constraintTop_toBottomOf="@id/tv01" />
+
+    <ImageView
+        android:id="@+id/playerimg03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:clickable="false"
+        android:src="@drawable/btnplayer"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv03"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:lines="2"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        app:layout_constraintEnd_toEndOf="@id/iv03"
+        app:layout_constraintStart_toStartOf="@id/iv03"
+        app:layout_constraintTop_toBottomOf="@id/iv03" />
+
+    <ImageView
+        android:id="@+id/iv04"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:minHeight="130dp"
+        android:paddingLeft="5dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@id/guide_end"
+        app:layout_constraintStart_toEndOf="@id/iv03"
+        app:layout_constraintTop_toTopOf="@id/iv03" />
+
+    <ImageView
+        android:id="@+id/playerimg04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:clickable="false"
+        android:src="@drawable/btnplayer"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv04"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:ellipsize="end"
+        android:lines="2"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        app:layout_constraintEnd_toEndOf="@id/iv04"
+        app:layout_constraintStart_toStartOf="@id/iv04"
+        app:layout_constraintTop_toBottomOf="@id/iv04" />
+
+</android.support.constraint.ConstraintLayout>

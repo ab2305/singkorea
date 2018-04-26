@@ -1,0 +1,36 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="singkorea.singkorea.com.singkorea.tab.TestFragment">
+
+
+    <ImageView
+        android:id="@+id/img_map24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="-40dp"
+        android:src="@drawable/area24" />
+
+    <ImageView
+        android:id="@+id/img_map22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/area22"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_map24" />
+
+    <ImageView
+        android:id="@+id/img_map23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/area23"
+        app:layout_constraintStart_toEndOf="@id/img_map24"
+        app:layout_constraintTop_toBottomOf="@id/img_map23" />
+
+</android.support.constraint.ConstraintLayout>

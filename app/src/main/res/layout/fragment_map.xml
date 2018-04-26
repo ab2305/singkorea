@@ -1,0 +1,292 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="singkorea.singkorea.com.singkorea.tab.MapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <singkorea.singkorea.com.singkorea.util.ImageviewClickArea
+            android:id="@+id/img_map24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-10dp"
+            android:layout_marginLeft="46dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/area24" />
+
+        <singkorea.singkorea.com.singkorea.util.ImageviewClickArea
+            android:id="@+id/img_map22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_map24"
+            android:src="@drawable/area22" />
+
+
+        <singkorea.singkorea.com.singkorea.util.ImageviewClickArea
+            android:id="@+id/img_map23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-8dp"
+            android:layout_marginTop="86dp"
+            android:layout_toRightOf="@id/img_map24"
+            android:src="@drawable/area23" />
+
+        <singkorea.singkorea.com.singkorea.util.ImageviewClickArea
+            android:id="@+id/img_map21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_map26"
+            android:layout_toRightOf="@+id/img_map22"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="-4dp"
+            android:src="@drawable/area21" />
+
+
+        <singkorea.singkorea.com.singkorea.util.ImageviewClickArea
+            android:id="@+id/img_map25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="43dp"
+            android:layout_toRightOf="@id/img_map24"
+            android:src="@drawable/area25" />
+
+        <singkorea.singkorea.com.singkorea.util.ImageviewClickArea
+            android:id="@+id/img_map27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="161dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/area27" />
+
+        <singkorea.singkorea.com.singkorea.util.ImageviewClickArea
+            android:id="@+id/img_map26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginTop="70dp"
+            android:layout_toEndOf="@+id/img_map23"
+            android:src="@drawable/area26" />
+
+        <singkorea.singkorea.com.singkorea.util.ImageviewClickArea
+            android:id="@+id/img_map28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_map26"
+            android:layout_below="@+id/img_map27"
+            android:layout_marginLeft="-8dp"
+            android:layout_marginTop="-19dp"
+            android:src="@drawable/area28" />
+        <singkorea.singkorea.com.singkorea.util.ImageviewClickArea
+            android:id="@+id/img_map20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_map23"
+            android:layout_below="@+id/img_map26"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="-19dp"
+            android:src="@drawable/area20" />
+
+        <singkorea.singkorea.com.singkorea.util.ImageviewClickArea
+            android:id="@+id/img_map19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_map20"
+            android:layout_marginLeft="-9dp"
+            android:layout_marginTop="83dp"
+            android:src="@drawable/area19" />
+
+        <singkorea.singkorea.com.singkorea.util.ImageviewClickArea
+            android:id="@+id/img_map5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_map22"
+            android:layout_below="@+id/img_map21"
+            android:layout_marginTop="-17dp"
+            android:layout_marginLeft="-7dp"
+            android:src="@drawable/area5" />
+
+        <singkorea.singkorea.com.singkorea.util.ImageviewClickArea
+            android:id="@+id/img_map11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_map21"
+            android:layout_below="@+id/img_map20"
+            android:layout_marginTop="-24dp"
+            android:layout_marginLeft="-5dp"
+            android:src="@drawable/area11" />
+
+        <singkorea.singkorea.com.singkorea.util.ImageviewClickArea
+            android:id="@+id/img_map10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_map21"
+            android:layout_below="@+id/img_map11"
+            android:layout_marginTop="-19dp"
+            android:layout_marginLeft="-14dp"
+            android:src="@drawable/area10" />
+
+        <singkorea.singkorea.com.singkorea.util.ImageviewClickArea
+            android:id="@+id/img_map12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_map11"
+            android:layout_below="@+id/img_map20"
+            android:layout_marginTop="-1dp"
+            android:layout_marginLeft="-12dp"
+            android:src="@drawable/area12" />
+
+        <singkorea.singkorea.com.singkorea.util.ImageviewClickArea
+            android:id="@+id/img_map13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_map12"
+            android:layout_below="@+id/img_map20"
+            android:layout_marginTop="-8dp"
+            android:layout_marginLeft="-14dp"
+            android:src="@drawable/area13" />
+
+        <singkorea.singkorea.com.singkorea.util.ImageviewClickArea
+            android:id="@+id/img_map9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_map10"
+            android:layout_below="@+id/img_map11"
+            android:layout_marginTop="-2dp"
+            android:layout_marginLeft="-6dp"
+            android:src="@drawable/area9" />
+
+
+        <singkorea.singkorea.com.singkorea.util.ImageviewClickArea
+            android:id="@+id/img_map8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_map9"
+            android:layout_below="@+id/img_map11"
+            android:layout_marginTop="-5dp"
+            android:layout_marginLeft="-2dp"
+            android:src="@drawable/area8" />
+
+        <singkorea.singkorea.com.singkorea.util.ImageviewClickArea
+            android:id="@+id/img_map3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_map5"
+            android:layout_below="@+id/img_map10"
+            android:layout_marginTop="-16dp"
+            android:layout_marginLeft="-8dp"
+            android:src="@drawable/area3" />
+
+        <singkorea.singkorea.com.singkorea.util.ImageviewClickArea
+            android:id="@+id/img_map4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_map5"
+            android:layout_below="@+id/img_map3"
+            android:layout_marginTop="-4dp"
+            android:layout_marginLeft="-1dp"
+            android:src="@drawable/area4" />
+
+        <singkorea.singkorea.com.singkorea.util.ImageviewClickArea
+            android:id="@+id/img_map7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_map3"
+            android:layout_below="@+id/img_map8"
+            android:layout_marginTop="-1dp"
+            android:layout_marginLeft="3dp"
+            android:src="@drawable/area7" />
+
+        <singkorea.singkorea.com.singkorea.util.ImageviewClickArea
+            android:id="@+id/img_map18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_map19"
+            android:layout_below="@+id/img_map27"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="-16dp"
+            android:src="@drawable/area18" />
+
+        <singkorea.singkorea.com.singkorea.util.ImageviewClickArea
+            android:id="@+id/img_map17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_map18"
+            android:layout_below="@+id/img_map27"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="-6dp"
+            android:src="@drawable/area17" />
+
+        <singkorea.singkorea.com.singkorea.util.ImageviewClickArea
+            android:id="@+id/img_map16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_map14"
+            android:layout_below="@+id/img_map18"
+            android:layout_marginTop="-11dp"
+            android:layout_marginLeft="-12dp"
+            android:src="@drawable/area16" />
+
+        <singkorea.singkorea.com.singkorea.util.ImageviewClickArea
+            android:id="@+id/img_map14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_map7"
+            android:layout_below="@+id/img_map20"
+            android:layout_marginTop="-6dp"
+            android:layout_marginLeft="2dp"
+            android:src="@drawable/area14" />
+
+        <singkorea.singkorea.com.singkorea.util.ImageviewClickArea
+            android:id="@+id/img_map15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_map8"
+            android:layout_below="@+id/img_map13"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/area15" />
+
+
+        <singkorea.singkorea.com.singkorea.util.ImageviewClickArea
+            android:id="@+id/img_map6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_map3"
+            android:layout_below="@+id/img_map7"
+            android:layout_marginTop="-3dp"
+            android:layout_marginLeft="-3dp"
+            android:src="@drawable/area6" />
+
+
+        <singkorea.singkorea.com.singkorea.util.ImageviewClickArea
+            android:id="@+id/img_map2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_map10"
+            android:layout_below="@+id/img_map6"
+            android:layout_marginTop="-2dp"
+            android:layout_marginLeft="-10dp"
+            android:src="@drawable/area2" />
+
+
+        <singkorea.singkorea.com.singkorea.util.ImageviewClickArea
+            android:id="@+id/img_map1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_map6"
+            android:layout_below="@+id/img_map12"
+            android:layout_marginTop="9dp"
+            android:layout_marginLeft="2dp"
+            android:src="@drawable/area1" />
+
+    </RelativeLayout>
+
+
+</HorizontalScrollView>
